@@ -15,12 +15,23 @@ struct ContentView: View {
                 NavigationLink(destination: SecondView()) {
                     Text("Click me!")
                 }
+                NavigationLink(destination: HomeView()) {
+                    Text("Home")
+                }
+                NavigationLink(destination: AboutView()) {
+                    Text("About")
+                }
+                NavigationLink(destination: ContactView()) {
+                    Text("Contact")
+                }
+                NavigationLink(destination: HelpView()) {
+                    Text("Help")
+                }
             }
             .navigationTitle("Home")
             .navigationBarTitleDisplayMode(.inline)
             .navigationBarHidden(true)
         }
-        
 
     }
 }
